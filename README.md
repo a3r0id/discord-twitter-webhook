@@ -9,7 +9,7 @@ A simple daemon script that forwards Tweets from one or multiple users to a Disc
 
 - Python Installation, version >= 3.6
 
-- Install the repository requirements: `python -m pip install -r requirements.txt`
+- Repository requirements. Install via cmd/terminal: `python -m pip install -r requirements.txt`
 
 - Twitter Developer Account [Here](https://developer.twitter.com/en).
 
