@@ -25,7 +25,7 @@ A simple daemon script that forwards Tweets from one or multiple users to a Disc
 
 - Add the screen name/s of the author/s that you want to follow to the array. (usernames_to_watch)
 
-- Add your Discord Webhook/s' url/s to the last array. (webhook_urls) 
+- Add the url/s of your Discord Webhook/s to the last array. (webhook_urls) 
 
 #### Config.json Example:
 
