@@ -44,7 +44,8 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
     
     // Array of our screen names to push to the webhook.
     "usernames_to_watch": [
-        "hostinfonet"
+        "joerogan",
+        "neiltyson"
         ],
     
     // Array of Webhooks to push Tweets to.
@@ -54,3 +55,20 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
     ]
 }
 ```
+
+## Run 
+
+> Simply double-click or run the file __webhook.py__.
+
+> Correct Output:
+    ```
+    [joerogan] -> Successfully added joerogan to feed!
+    [neiltyson] -> Successfully added neiltyson to feed!
+    ```
+
+> Tweets will be pushed to the Webhook as they are seen by the listenser.
+
+> Enjoy!
+
+
+
