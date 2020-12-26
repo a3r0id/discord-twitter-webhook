@@ -27,7 +27,7 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
 
 - Add the url/s of your Discord Webhook/s to the last array. (webhook_urls) 
 
-#### Config.json Example:
+#### Editing The Config.json (Example):
 
 ```json
 
@@ -58,17 +58,17 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
 
 ## Run 
 
-> Simply double-click or run the file __webhook.py__.
+- Simply double-click or run the file __webhook.py__.
 
-> Correct Output:
+- Correct Output:
     ```
     [joerogan] -> Successfully added joerogan to feed!
     [neiltyson] -> Successfully added neiltyson to feed!
     ```
 
-> Tweets will be pushed to the Webhook as they are seen by the listenser.
+- Tweets will be pushed to the Webhook as they are seen by the listenser.
 
-> Enjoy!
+- Enjoy!
 
 
 
