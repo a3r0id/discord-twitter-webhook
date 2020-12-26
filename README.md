@@ -11,7 +11,7 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
 
 - Repository requirements. Install via cmd/terminal: `python -m pip install -r requirements.txt`
 
-- Twitter Developer Account [Here](https://developer.twitter.com/en).
+- Twitter Developer Account ([Here](https://developer.twitter.com/en)).
 
 - Twitter API Credentials. Make a set of API keys if you haven't already.
 
