@@ -9,6 +9,7 @@
 
 - Thats it! The exectuable will be located @ `../dist/webhook.exe`
 
-- Note: The executable will run on most windows machines.
+- Note: The executable will run on most windows machines,
+no Python installation or dependencies are required!
 
 - Note: You must include the config.json in the directory of your executable.
