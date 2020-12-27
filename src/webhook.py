@@ -19,9 +19,10 @@ try:
     consumer_s = config['consumer_s']
     token = config['token']
     token_s = config['token_s']
-    bool_only_author = config['bool_only_author']
+    bool_only_author = config['only_push_tweets_from_author']
     users = config['usernames_to_watch']
     webhooks = config['webhook_urls']
+    bool_retweet = config['retweet']
 except Exception as f:
     print(f)
     _ = input("[ERROR IN CONFIGURATION FILE (config.json)] Press enter to exit...")
@@ -55,9 +56,12 @@ class MyStreamListener(StreamListener):
     
     # ON STATUS
     def on_status(self, status):
-        if bool_only_author:
-            if status.author.screen_name not in users:
-                return 
+
+        if bool_only_author and status.author.screen_name not in users:
+            return 
+
+        if bool_retweet:
+            status.retweet()    
 
         # CALL D.WEBHOOK OBJECT
         webhook = DiscordWebhook(
