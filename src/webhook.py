@@ -61,8 +61,10 @@ class MyStreamListener(tweepy.StreamListener):
 # INITIALIZE THE LISTENER AND STREAM
 while True:
     try:
+        print("[LISTENING TO STREAM]")
         myStreamListener = MyStreamListener()
         myStream = Stream(auth = api.auth, listener=myStreamListener)
         myStream.filter(follow=feed)
     except Exception as f:
-        print(f)  
+        print("[ERROR] -> %s" % (f,))
+        print("[RESTARTING]")
