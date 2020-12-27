@@ -3,9 +3,11 @@
     "consumer_s":"TWITTER_CONSUMER_KEY_SECRET",
     "token": "TWITTER_TOKEN",
     "token_s": "TWITTER_TOKEN_SECRET",
-    "bool_only_author": true,
+    "only_push_tweets_from_author": true,
+    "retweet": true,     
     "usernames_to_watch": [
-        "hostinfonet"
+        "joerogan",
+        "neiltyson"
         ],
     "webhook_urls": [
         "https://discord.com/api/webhooks/792164415010263085/Y0NKBZjh2wFZFoAS0VWhsoK0hMUfn_GM7Z8hPiIOYAyhldbCKM24mZbmd1D44Y4egJYf"
