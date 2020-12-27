@@ -59,6 +59,10 @@ class MyStreamListener(tweepy.StreamListener):
             return True        
 
 # INITIALIZE THE LISTENER AND STREAM
-myStreamListener = MyStreamListener()
-myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
-myStream.filter(follow=feed)
+while True:
+    try:
+        myStreamListener = MyStreamListener()
+        myStream = Stream(auth = api.auth, listener=myStreamListener)
+        myStream.filter(follow=feed)
+    except Exception as f:
+        print(f)  
