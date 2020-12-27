@@ -41,7 +41,10 @@ A simple daemon script that forwards Tweets from one or multiple users to one or
     
     // true = only push Tweets that are by the intended author.
     // false = push ALL replies, retweets etc that include the intended author.
-    "bool_only_author": true,
+    "only_push_tweets_from_author": true,
+    
+    // retweet every Tweet that gets passed to the Webhook
+    "retweet": true, 
     
     // Array of our screen names to push to the webhook.
     "usernames_to_watch": [
