@@ -1,5 +1,5 @@
 from json import load
-vfrom tweepy import OAuthHandler, API, StreamListener, Stream
+from tweepy import OAuthHandler, API, StreamListener, Stream
 from discord_webhook import DiscordWebhook
 from requests import get
 
