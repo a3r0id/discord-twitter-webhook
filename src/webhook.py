@@ -1,7 +1,5 @@
 from json import load
-from logging import currentframe
-from os import stat
-from tweepy import OAuthHandler, API, StreamListener, Stream
+vfrom tweepy import OAuthHandler, API, StreamListener, Stream
 from discord_webhook import DiscordWebhook
 from requests import get
 
