@@ -1,5 +1,5 @@
 # twitter-webhook-discord
-A simple daemon script that listens for/forwards Tweets from one or multiple users to one or multiple Discord Webhooks.
+A simple daemon program that listens for/forwards Tweets from one or multiple users to one or multiple Discord Webhooks.
 (UNOFFICIAL) 
 
 ## Updates
