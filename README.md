@@ -1,6 +1,8 @@
 # twitter-webhook-discord
+(UNOFFICIAL)
 A simple daemon program that listens for/forwards Tweets from one or multiple users to one or multiple Discord Webhooks.
-(UNOFFICIAL) 
+Twitter-discord-webhook can also retweet each Tweet from the Twitter account that is authed. (optional)
+
 
 ## Updates
 - [Latest] v1.0.22: Added basic version control and update notifications.
