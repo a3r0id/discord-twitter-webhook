@@ -1,10 +1,11 @@
 # twitter-webhook-discord
 A simple daemon script that listens for/forwards Tweets from one or multiple users to one or multiple Discord Webhooks.
-(UNOFFICIAL)
+(UNOFFICIAL) 
+
+## Updates
+- 1.0.21: Added optional retweet functionality;Universal error-handling. 
 
 ## Setup
-
-
 
 ### What you'll need
 
@@ -69,14 +70,11 @@ A simple daemon script that listens for/forwards Tweets from one or multiple use
     [joerogan] -> Successfully added joerogan to feed!
     [neiltyson] -> Successfully added neiltyson to feed!
     ```
-
 - Tweets will be pushed to the Webhook as they are seen by the listenser.
-
 
 ## Create a portable executable (.exe) via Pyinstaller
 
 [Here](https://github.com/chadgroom/twitter-webhook-discord/blob/main/pyinstaller.md)
-
 
 - Enjoy!
 
