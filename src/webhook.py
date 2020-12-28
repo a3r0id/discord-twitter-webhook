@@ -2,6 +2,24 @@ import json
 import tweepy
 from tweepy import OAuthHandler, API
 from discord_webhook import DiscordWebhook
+from requests import get
+
+build_version = ["1", "0", "22"]
+
+# BASIC UPDATE NOTIFICATION
+r = get(("https://raw.githubusercontent.com"
+    "/chadgroom/discord-twitter-webhook/main/version.gitignore"))
+
+current_version = r.text.split(".")
+i = 0
+for c in current_version:
+    if c != build_version[i]:
+        print("\r\nUpdate available!\nCurrent Version: %s\nUpdate Version: %s" % (".".join(build_version), r.text,))
+        if i < 2:
+            _=input("Update required!\nHit enter to exit...")
+            exit(0)   
+        break
+    i += 1
 
 # OPEN CONFIG FILE
 try:
