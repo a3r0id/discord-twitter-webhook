@@ -61,7 +61,7 @@ class MyStreamListener(StreamListener):
             return 
 
         if bool_retweet:
-            status.retweet()    
+            api.retweet(status.id)  
 
         # CALL D.WEBHOOK OBJECT
         webhook = DiscordWebhook(
