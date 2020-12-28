@@ -10,7 +10,7 @@ build_version = ["1", "0", "22"]
 r = get(("https://raw.githubusercontent.com"
     "/chadgroom/discord-twitter-webhook/main/version.gitignore"))
 
-current_version = r.text.split(".")
+current_version = r.text.strip("\n").split(".")
 i = 0
 for c in current_version:
     if c != build_version[i]:
