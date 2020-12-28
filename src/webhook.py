@@ -1,6 +1,7 @@
-import json
-import tweepy
-from tweepy import OAuthHandler, API
+from json import load
+from logging import currentframe
+from os import stat
+from tweepy import OAuthHandler, API, StreamListener, Stream
 from discord_webhook import DiscordWebhook
 from requests import get
 
@@ -14,7 +15,8 @@ current_version = r.text.strip("\n").split(".")
 i = 0
 for c in current_version:
     if c != build_version[i]:
-        print("\r\nUpdate available!\nCurrent Version: %s\nUpdate Version: %s" % (".".join(build_version), r.text,))
+        print(c + " != " + build_version[i])
+        print("\nUpdate available!\nCurrent Version: %s\nUpdate Version: %s" % (".".join(build_version), r.text,))
         if i < 2:
             _=input("Update required!\nHit enter to exit...")
             exit(0)   
@@ -79,9 +81,9 @@ class MyStreamListener(StreamListener):
             return 
 
         if bool_retweet:
-            api.retweet(status.id)  
+            api.retweet(status.id)    
 
-        # CALL D.WEBHOOK OBJECT
+        # CALL DISCORD WEBHOOK OBJECT
         webhook = DiscordWebhook(
             url=webhooks,
             username="%s @%s" % (status.author.name, status.author.screen_name,),
@@ -106,9 +108,9 @@ if not len(feed):
 # INITIALIZE THE LISTENER AND STREAM
 while True:
     try:
-        print("[LISTENING TO STREAM]")
         myStreamListener = MyStreamListener()
         myStream = Stream(auth = api.auth, listener=myStreamListener)
+        print("[LISTENING TO STREAM]")
         myStream.filter(follow=feed)
     except Exception as f:
         print("[ERROR] -> %s" % (f,))
