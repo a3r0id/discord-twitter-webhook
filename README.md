@@ -3,7 +3,9 @@ A simple daemon script that listens for/forwards Tweets from one or multiple use
 (UNOFFICIAL) 
 
 ## Updates
-- [Latest] v1.0.21: Added optional retweet functionality;Universal error-handling. 
+- [Latest] v1.0.22: Added basic version control and update notifications.
+
+- v1.0.21: Added optional retweet functionality;Universal error-handling. 
 
 - v1.0.20: Added error-handling allowing stream loop to reset on-error. 
 
